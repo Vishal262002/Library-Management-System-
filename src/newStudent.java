@@ -153,7 +153,7 @@ public class newStudent extends javax.swing.JFrame {
             Connection con = ConnectionProvider.getCon();
             Statement st = con.createStatement();
             st.executeUpdate("insert into student values('"+studentID+"','"+name+"','"+fatherName+"','"+courseName+"','"+branchName+"')");
-            JOptionPane.showMessageDialog(null,"Successfully Updated");
+            JOptionPane.showMessageDialog(null,"StudentID Successfully Updated");
             setVisible(false);
             new newStudent().setVisible(true);
          }
